@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body{
+    margin:0;
+    font-family: "Poppins";
+    font-weight:300;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right bottom, #7a003b, #5b0c2e, #3e0f21, #230d14, #000000);
+}
+
+#navbar{
+    position:fixed;
+    top:0;
+    height:60px;
+    width:100vw;
+    padding:0;
+    color:white;
+    background-image: radial-gradient(#fbfbfc, #e5c5d5);
+    align-content: center;
+    text-align:center;
+    z-index:999;
+}
+
+
+.logo{
+    width:100px;
+    margin-top:2px; 
+}
+
+#form{
+    margin:calc(35vh - 200px) auto;
+    width:340px;
+    height:280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 6px -6px #777;
+    padding: 20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+}
+
+@media screen and (max-width: 928px) {
+    #form{
+        margin: calc(40vh - 185px) auto;
+    }
+}
+
+
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:200px;
+    color: #750038;
+    font-family: inherit;
+    border-bottom:3px solid black;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition: all .3s;
+    border-bottom:1px solid rgb(156, 155, 155);
+}
+
+input:focus{
+    border-bottom:2px solid rgb(156, 155, 155);
+}
+
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    color:#750038;
+}
+
+button{
+    padding:8px 12px;
+    margin: 8px 0px;
+    cursor: pointer;
+    background:0;
+    transition:all .5s;
+    background-color: rgb(255, 255, 255);
+    font-family: inherit;
+    border-radius: 5px;
+    letter-spacing: 1.1px;
+    font-size:13px;
+    position:relative;
+    left:34%;
+}
+
+button:hover{
+    background:#78788c;
+    color:#fff;
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+
+select {
+    border: 1px solid #EEE;
+    border-radius: .25rem;
+    padding: .5rem 1.5rem .5rem .5rem;
+    display: flex;
+    background-color: rgb(174, 172, 172);
+    outline: 0;
+    cursor: pointer;
+    color:white;
+   
+}
+
+section {
+    max-width: 25rem;
+    margin-top: 3rem;
+    Z-index:1;
+    padding-left:15px;
+  }
+  
+  .feature {
+    background-color: white;
+    width:348px;
+    position: relative;
+    max-width: 21rem;
+    height: 12rem;
+    margin: 2rem auto;
+    padding: 2em;
+    border-radius: 0.75em;
+    box-shadow: 5px 5px 20px rgba(0 0 0/0.15);
+    text-align: left;
+    transition: transform 200ms ease-in;
+  }
+  
+  .feature:hover {
+    transform: scale(1.03);
+  }
+  
+  .feature__desc {
+    margin-top: 0.5em;
+    color: var(--Grayish-Blue);
+  }
+  
+  .feature__img {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 65px;
+  }
+  
+  /* separate styling */
+  
+  .section__title {
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 1.65rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  
+  .section__title span {
+    font-weight: 700;
+  }
+  
+  .section__desc {
+    max-width: 32ch;
+    margin: 1rem auto 3rem;
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .feature-one {
+    border-top: 5px solid Blue;
+    visibility: hidden;
+  }
+  
+  .feature-two {
+    border-top: 5px solid yellow;
+    visibility: hidden;
+  }
+  
+  .feature-three {
+    border-top: 5px solid grey;
+  }
+  
+  .feature-four {
+    border-top: 5px solid red;
+    visibility: hidden;
+  }
+.feature-five {
+        border-top: 5px solid greenyellow;
+        visibility: hidden;
+}
+  
+  /* attribution styling */
+  
+  footer {
+    position: absolute;
+    top: 0;
+  }
+  
+  .attribution {
+    color: var(--Very-Dark-Blue);
+    opacity: 0.7;
+  }
+  
+  .attribution a {
+    color: var(--Blue);
+    text-decoration: underline;
+  }
+  
+  .attribution a:hover {
+    color: var(--Cyan);
+  }
+  
+  /* media queries */
+  
+  @media (min-width: 1000px) {
+    body {
+      align-items: center;
+      min-height: 100vh;
+    }
+  
+    section {
+      max-width: 200rem;
+    }
+  
+    .section__title {
+      margin: 0 auto;
+      max-width: 40%;
+      font-size: 2rem;
+    }
+  
+    .section__desc {
+      max-width: 55ch;
+      margin: 1rem auto 1rem;
+    }
+  
+    .features {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      
+    justify-content: center;
+    padding-top: 10px;
+    }
+  
+    .feature-one {
+      margin: auto 0;
+    }
+  
+    .feature-four {
+      margin: auto 0;
+    }
+  }
+
+ 
+
+   
