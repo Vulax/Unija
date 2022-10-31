@@ -17,7 +17,7 @@ btn.addEventListener('click', function onClick() {
     swot[0].innerHTML = "Regulisani zakoni sa vise olakšica. <br>  Dostupnost svih vrsta transporta. <br> Ćlanica EU. <br> Niska cena poljoprivrednog <br> zemljišta.";
     swot[1].innerHTML = "Visoka cena nekretnine i radne snage.";
     swot[2].innerHTML = "Svest o konoplji je na zavidnom nivou. <br> Visoka isplativost. <br> Potencijal za kapital.";
-    swot[3].innerHTML = "Mali broj kompetitora. <br> Vremenske nepogode.";
+    swot[3].innerHTML = "Mali broj kompetitora. <br> Vremenske nepogode. ";
   }else if (drzava==2){
     swot[0].innerHTML = "Niska cena nekretnina.";
     swot[1].innerHTML = "Mala površina obradivog područja. <br> Smanjenje diplomiranih studenata.";
