@@ -2,7 +2,6 @@
 body{
     margin:0;
     font-family: "Poppins";
-    font-weight:300;
     text-rendering: optimizeLegibility;
     letter-spacing: 1px;
     background-image: linear-gradient(to right bottom, #7a003b, #5b0c2e, #3e0f21, #230d14, #000000);
