@@ -8,17 +8,22 @@ body{
     background-image: linear-gradient(to right bottom, #7a003b, #5b0c2e, #3e0f21, #230d14, #000000);
 }
 
-#navbar{
-    position:fixed;
-    top:0;
-    height:60px;
-    width:100vw;
-    padding:0;
-    color:white;
-    background-image: radial-gradient(#fbfbfc, #e5c5d5);
-    align-content: center;
-    text-align:center;
-    z-index:999;
+.navBar a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  float: right;
+  padding-left:30px;
+  padding-right:30px;
+  white-space: nowrap;
+  margin-top:40px;
+}
+
+.navBar a:hover {
+  color: rgb(255, 163, 182);
 }
 
 
